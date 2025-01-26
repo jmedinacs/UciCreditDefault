@@ -33,7 +33,11 @@ The project currently includes:
      - Consolidated ambiguous values in education column.
      - Converted numerical columns (marraige, sex) to textual labels.
      - Added new column Pay Status Word, for clearer interpretation of Pay_x values.
-For a detailed overview of cleaning and transformation steps, see the progress.md file.
+
+## Progress and Changelog
+
+Detailed cleaning and transformation steps are documented in [changelog/progress.md](changelog/progress.md).
+
 
 ## Future Additions
 1. Machine Learning Initial Project and result.
