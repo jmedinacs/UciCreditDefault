@@ -25,23 +25,38 @@ The raw dataset is included in this repository under `data/raw/UCI_Credit_Card_o
 This dataset is distributed under the terms of the [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/), which permits sharing and adaptation with attribution.
 
 ## Current Progress
+
 The project currently includes:
-1. Raw Dataset:
+1. **Raw Dataset**:
    - Directly downloaded from the UCI Machine Learning Repository.
-2. Cleaned Dataset:
-   - Includes the altest cleaned version (v4.3.3) with:
-     - Consolidated ambiguous values in education column.
-     - Converted numerical columns (marraige, sex) to textual labels.
-     - Added new column Pay Status Word, for clearer interpretation of Pay_x values.
+2. **Cleaned Dataset**:
+   - Includes the latest cleaned version (`v4.3.3`) with:
+     - Consolidated ambiguous values in the `EDUCATION` column.
+     - Converted numerical columns (`MARRIAGE`, `SEX`) to textual labels.
+     - Added a new column `Pay Status Word` for clearer interpretation of `PAY_X` values.
+
+## Key Improvements
+
+- **Ambiguous Values**: Consolidated unknown `EDUCATION` levels into a single category (`Unknown`) for clarity.
+- **Column Headers**: Renamed technical headers to user-friendly names (e.g., `PAY_X` → `Pay Status`).
+- **Textual Labels**: Converted numerical columns (`SEX`, `MARRIAGE`) to descriptive textual labels for better interpretability.
+- **New Column**: Added `Pay Status Word` to provide clear interpretations of payment status.
 
 ## Progress and Changelog
 
 Detailed cleaning and transformation steps are documented in [changelog/progress.md](changelog/progress.md).
 
+## Visualizations (Coming Soon)
 
-## Future Additions
-1. Machine Learning Initial Project and result.
-2. Current Data Analysis: Visualization and insights from the cleaned data will be added as the project progresses. 
+Interactive and static visualizations showcasing the dataset's structure and key insights will be added to the repository.
+
+## Future Plans and Additions
+
+- Perform exploratory data analysis (EDA) to identify trends and correlations.
+- Create dashboards in Tableau for interactive visualization.
+- Apply machine learning models to predict credit default risk.
+- Include visualizations and insights from the cleaned dataset.
+- Showcase the results of an initial machine learning model using the cleaned data.
 
 ## Contact
 
