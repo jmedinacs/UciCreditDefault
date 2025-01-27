@@ -18,7 +18,7 @@ This document tracks the cleaning, validation, and transformation steps applied 
 | 12     | Change        | Translated `EDUCATION` values into descriptive labels.                                               | Updated values: `1 = Graduate School`, `2 = University`, `3 = High School`, `4 = Other`.       | 1/25/2025  | v3.3.3      | Completed     |
 | 13     | Change        | Translated `Sex` values into descriptive labels.                                                    | Updated values: `1 = Male`, `2 = Female`.                                                     | 1/25/2025  | v4.3.3      | Completed     |
 | 14     | Change        | Renamed `Pay Status`, `Bill`, and `Payment` columns to reflect months instead of numerical codes.    | Updated column names for clarity (e.g., `Pay Status 0` → `Pay Status September 2005`). Reordered columns in ascending order. | 1/26/2025  | v5.0.0      | Completed     |
-
+| 15	 | Validate      | Created a Range Check sheet for Numerical Columns													| Verified minimum and maximum values for numerical columns. Identified possible outliers in billing and payment amounts. Observed negative balances, which require further investigation.| 1/26/2025 | v5.1.0 | Completed     |
 ---
 
 ## Key Observations
