@@ -19,6 +19,11 @@ This document tracks the cleaning, validation, and transformation steps applied 
 | 13     | Change        | Translated `Sex` values into descriptive labels.                                                    | Updated values: `1 = Male`, `2 = Female`.                                                     | 1/25/2025  | v4.3.3      | Completed     |
 | 14     | Change        | Renamed `Pay Status`, `Bill`, and `Payment` columns to reflect months instead of numerical codes.    | Updated column names for clarity (e.g., `Pay Status 0` → `Pay Status September 2005`). Reordered columns in ascending order. | 1/26/2025  | v5.0.0      | Completed     |
 | 15	 | Validate      | Created a Range Check sheet for Numerical Columns													| Verified minimum and maximum values for numerical columns. Identified possible outliers in billing and payment amounts. Observed negative balances, which require further investigation.| 1/26/2025 | v5.1.0 | Completed     |
+| 16     | Validate      | Created Cleaning Investigations Sheet and consolidated cleaning documentation.             | Range check and negative bill amount investigation incorporated.                          | 1/27/2025   | v5.1.0      | Completed     |
+| 17     | Validate      | Negative values for bill amount investigation.                                             | Age range within normal range. Pay status range within set parameters. Bill and payment amounts show negative and high values, candidates for further exploration and investigation. | 1/27/2025   | v5.1.1      | Completed     |
+| 18     | Change        | Verbal Data Trimming.                                                                      | Trimmed all verbal columns to remove leading, trailing, and repeated spaces.              | 1/27/2025   | v5.1.2      | Completed     |
+
+
 ---
 
 ## Key Observations
@@ -27,6 +32,9 @@ This document tracks the cleaning, validation, and transformation steps applied 
 - Severe class imbalance observed in `Pay Status`, with 81% of entries falling into `0` (Minimum Payment Made).
 - All cleaning and transformation steps are tracked to ensure transparency and reproducibility.
 - Pay status starts with 0 while BILL_AMT` and PAY_AMT` starts with 1. Also, dataset documentation indicates the months are in descending order Sept 2005 to April 2005.
+- Minimum and Maximum range checked. `Age` and `Pay Status` are both wihtin normal range. `BILL_AMT` shows high values and negative values, flagged for further investigation.
+- Further investigation of negative values in `BILL_AMT` likely due to customer overpayment, verified through comparison of `BILL_AMT` and `PAY_AMT`. 
+- Granular data about `BILL_AMT` and `PAY_AMT` can yield more definitive data about the negative amount but taht data is not within this dataset. 
 
 ---
 
