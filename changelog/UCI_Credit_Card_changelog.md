@@ -22,7 +22,7 @@ This document tracks the cleaning, validation, and transformation steps applied 
 | 16     | Validate      | Created Cleaning Investigations Sheet and consolidated cleaning documentation.             | Range check and negative bill amount investigation incorporated.                          | 1/27/2025   | v5.1.0      | Completed     |
 | 17     | Validate      | Negative values for bill amount investigation.                                             | Age range within normal range. Pay status range within set parameters. Bill and payment amounts show negative and high values, candidates for further exploration and investigation. | 1/27/2025   | v5.1.1      | Completed     |
 | 18     | Change        | Verbal Data Trimming.                                                                      | Trimmed all verbal columns to remove leading, trailing, and repeated spaces.              | 1/27/2025   | v5.1.2      | Completed     |
-| 19     | Validate      | High `Bill` and `Payment` Amount Investigated.                                             | Analyzed customers' data that contain high `Bill` and `Patment` and confirmed that the amounts correspond to customer charging and payment behavior. Values were found appropriate and realistic.      | 1/29/2005 | v5.1.2      | Completed      |
+| 19     | Validate      | High `Bill` and `Payment` Amount Investigated.                                             | Analyzed customers' data that contain high `Bill` and `Payment` and confirmed that the amounts correspond to customer charging and payment behavior. Values were found appropriate and realistic.      | 1/29/2005 | v5.1.2      | Completed      |
 
 ---
 
